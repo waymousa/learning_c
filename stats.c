@@ -38,6 +38,12 @@ void main() {
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
 
+  print_statistics(test, SIZE);
+
+}
+
+void print_statistics(unsigned char test[], int size){
+  
 }
 
 /* Add other Implementation File Code Here */
