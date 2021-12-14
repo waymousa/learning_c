@@ -9,17 +9,18 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h
+ * @brief stubs the functions for the stats program
  *
- * <Add Extended Description Here>
+ * Stubs the funcitons for the stats application.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Samuel Waymouth
+ * @date 16/11/2021
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
+#include <stdio.h>
 
 /* Add Your Declarations and Function Comments here */ 
 
@@ -35,6 +36,13 @@
  *
  * @return <Add Return Informaiton here>
  */
-
+int find_minimum( unsigned char test );
+int find_maximum( unsigned char test );
+int find_mean( unsigned char test );
+int find_median( unsigned char test );
+void print_array( unsigned char test );
+void print_statistics( unsigned char test, int size);
+void sort_array(unsigned char test);
+void main();
 
 #endif /* __STATS_H__ */
