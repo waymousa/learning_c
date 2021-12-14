@@ -42,7 +42,7 @@ int find_mean( unsigned char test );
 int find_median( unsigned char test );
 void print_array( unsigned char test );
 void print_statistics( unsigned char test, int size);
-void sort_array(unsigned char test);
+void sort_array(unsigned char *test[]);
 void main();
 
 #endif /* __STATS_H__ */

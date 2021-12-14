@@ -38,12 +38,32 @@ void main() {
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
 
-  print_statistics(test, SIZE);
+  sort_array(&test);
+  //print_statistics(&test, SIZE);
 
 }
 
-void print_statistics(unsigned char test[], int size){
-  
+//void print_statistics(unsigned char test[], int size){
+//  printf("print stats to be implemented.");
+//}
+
+void sort_array(unsigned char *test[]){
+  printf("Before sorting the string appears like : \n");
+  printf("%s\n\n",test);
+  unsigned char ch;
+  int i,j,l;
+  l = SIZE;
+  for(i=1;i<l;i++)
+    for(j=0;j<l-i;j++)
+      if(test[j]>test[j+1]){
+        ch=test[j];
+        test[j]=test[j+1];
+        test[j+1]=ch;
+      }
+  printf("After sorting the string appears like : \n");
+  printf("%s\n\n",test);
 }
+
+
 
 /* Add other Implementation File Code Here */
