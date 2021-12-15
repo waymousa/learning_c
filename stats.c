@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) 2017 by Alex Fosdick - University of Colorado
+ * Copyright (C) 2021 by Samuel Waymouth - Amazon Web Services
  *
  * Redistribution, modification or use of this software in source or binary
  * forms is permitted as long as the files maintain this copyright. Users are 
@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c 
+ * @brief Performs statistical analysis of an array
  *
- * <Add Extended Description Here>
+ * Given an unsigned char array, calculates the mean, median, min and max.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Samuel Waymouth
+ * @date 2021
  *
  */
 
