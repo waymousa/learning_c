@@ -20,7 +20,6 @@
  */
 
 
-
 #include <stdio.h>
 #include "stats.h"
 
@@ -37,33 +36,41 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-
-  sort_array(&test);
-  //print_statistics(&test, SIZE);
+  print_array(test);
+  sort_array(test);
+  print_array(test);
+  print_statistics(test);
 
 }
 
-//void print_statistics(unsigned char test[], int size){
-//  printf("print stats to be implemented.");
-//}
+void print_statistics(unsigned char test[]){
+  printf("print stats to be implemented.");
+}
 
-void sort_array(unsigned char *test[]){
-  printf("Before sorting the string appears like : \n");
-  printf("%s\n\n",test);
-  unsigned char ch;
-  int i,j,l;
-  l = SIZE;
-  for(i=1;i<l;i++)
-    for(j=0;j<l-i;j++)
-      if(test[j]>test[j+1]){
-        ch=test[j];
-        test[j]=test[j+1];
-        test[j+1]=ch;
+void sort_array(unsigned char test[]){
+  unsigned char temp;
+  int inner,outer;
+  for(outer=0;outer<SIZE-1;outer++){
+    for(inner=outer+1;inner<SIZE;inner++){
+      if(test[outer]>test[inner]){
+        temp=test[outer];
+        test[outer]=test[inner];
+        test[inner]=temp;
       }
-  printf("After sorting the string appears like : \n");
-  printf("%s\n\n",test);
+    }
+  }
 }
 
-
+void print_array(unsigned char test[]){
+  puts("Array:");
+  for (int i = 0; i < SIZE; ++i) {
+    if(i<SIZE-1){
+      printf("test[%d] = %d, ", i, test[i]);
+    }else{
+      printf("test[%d] = %d", i, test[i]);
+    }    
+  }
+  printf("\b\b\n");
+}
 
 /* Add other Implementation File Code Here */
