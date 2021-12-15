@@ -36,13 +36,13 @@
  *
  * @return <Add Return Informaiton here>
  */
-int find_minimum( unsigned char test[] );
-int find_maximum( unsigned char test[] );
-int find_mean( unsigned char test[] );
-int find_median( unsigned char test[] );
-void print_array( unsigned char test[], unsinged int size);
-void print_statistics( unsigned char test[]);
-void sort_array(unsigned char test[]);
+int find_minimum( unsigned char test[],int size);
+int find_maximum( unsigned char test[],int size);
+int find_mean( unsigned char test[],int size);
+int find_median( unsigned char test[],int size);
+void print_array( unsigned char test[],int size);
+void print_statistics( unsigned char test[],int size);
+void sort_array(unsigned char test[],int size);
 void main();
 
 #endif /* __STATS_H__ */
